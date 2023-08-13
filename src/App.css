@@ -1,0 +1,32 @@
+*::before, *::after, * {
+    box-sizing:     border-box;
+    margin:         0;
+    padding:        0;
+}
+
+html {
+    overflow-x:     inherit;
+    font-family: 'Roboto Slab', serif;
+}
+:root {
+    --main-bg-color:            #ffffff;
+    --secondary-bg-color:       #EBECF0;
+    --lighter-black:            #1A1A1A;
+    --main-text-color:          #000000;
+    --secondary-text-color:     #888888;
+    --highlight-color:          #00ffd0;
+    --small-screen-max-width:       800px;
+    --medium-screen-max-width:      1200px;
+    --font-large:                   25px;
+    --font-medium:                  20px;
+    --font-small:                   14px;
+
+}
+
+.active::before {
+    transform: scaleX(1) !important;
+}
+
+.active {
+    color: var(--secondary-text-color) !important;
+}
