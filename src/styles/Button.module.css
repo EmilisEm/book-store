@@ -1,0 +1,17 @@
+.button {
+    text-decoration: none;
+    background-color: var(--secondary-bg-color);
+    border: solid 4px var(--main-text-color);
+    transition: all 400ms ease-in-out;
+    padding: 0.5rem 1rem;
+    font-size: var(--font-medium);
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+
+}

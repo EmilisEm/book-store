@@ -23,19 +23,32 @@ const SideMenu = () => {
         Book medium
       </div>
       <div className={styles.links}>
-        <NavLink className={stylesNav.navLink} to="/">
+        <NavLink onClick={toggleHamburger} className={stylesNav.navLink} to="/">
           Home
         </NavLink>
-        <NavLink className={stylesNav.navLink} to="/store">
+        <NavLink
+          onClick={toggleHamburger}
+          className={stylesNav.navLink}
+          to="/store"
+        >
           Store
         </NavLink>
-        <NavLink className={stylesNav.navLink} to="/login">
+        <NavLink
+          onClick={toggleHamburger}
+          className={stylesNav.navLink}
+          to="/login"
+        >
           Log in
-        </NavLink>{" "}
-        <NavLink className={stylesNav.navLink} to="/signup">
+        </NavLink>
+        <NavLink
+          onClick={toggleHamburger}
+          className={stylesNav.navLink}
+          to="/signup"
+        >
           Sign up
         </NavLink>
         <NavLink
+          onClick={toggleHamburger}
           className={`${stylesNav.cart} ${stylesNav.navLink}`}
           to="/cart"
         >
