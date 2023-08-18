@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import styles from "../styles/dashboard.module.css";
 import Button from "../components/Button";
 import bookImg from "../assets/stack-books-png-6.png";
+import DisplayItem from "../components/DisplayItem";
+import img1 from "../assets/stock-book.jpg";
+import img2 from "../assets/comicbook.jpg";
 
 const Dashboar = () => {
   const navigate = useNavigate();
@@ -23,6 +26,19 @@ const Dashboar = () => {
             Shop now
           </Button>
         </div>
+      </div>
+      <div className={styles.twoItemDisplay}>
+        <DisplayItem
+          img={img1}
+          title="Hard cover books"
+          desc="All the clasics and contemporary works you need"
+        />
+        <DisplayItem
+          img={img2}
+          title="Comic books"
+          desc="A story to read and see"
+          isReverse={true}
+        />
       </div>
     </>
   );

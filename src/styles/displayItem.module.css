@@ -1,4 +1,67 @@
-.display {
+.container{
+    padding: 1rem 2rem;
+    max-width: 30rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-bg-color);
+    box-shadow: 5px 5px 4px rgba(0,0,0,0.05);
+}
+.display {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    height: 60vh;
+}
+
+.displayText {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 58%;
+    transform: translate(0, 20%);
+    transition: all 400ms ease-in-out;
+    width: 30rem;
+    max-width: 50%;
+}
+
+.displayImage {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 50%;
+    transition: all 400ms ease-in-out;
+    transform: translate(0, -90%);
+    object-fit: cover;
+    width: 60%;
+    height: 40%;
+}
+
+.container:hover .displayText {
+    transform: translate(5%, 20%);
+}
+
+.container:hover .displayImage {
+    transform: translate(-5%, -90%);
+}
+
+.displayTextReverse {
+    left: 100%;
+    top: 10%;
+    transform: translate(-100%, 20%);
+}
+
+.displayImageReverse {
+    left: 0;
+    transform: translate(0, -30%);
+}
+
+.container:hover .displayTextReverse {
+    transform: translate(-110%, 20%);
+}
+
+.container:hover .displayImageReverse {
+    transform: translate(5%, -30%);
 }

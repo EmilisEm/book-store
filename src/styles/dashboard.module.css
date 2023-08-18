@@ -32,3 +32,11 @@
     max-width: 400px;
     width: 40%;
 }
+
+.twoItemDisplay {
+    margin: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+}
