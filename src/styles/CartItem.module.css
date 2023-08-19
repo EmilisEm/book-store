@@ -1,0 +1,33 @@
+.cartItemContainer {
+    min-width: 295px;
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    transition: all 400ms ease-in-out;
+    border-radius: 5px;
+    max-height: 400px;
+    height: 60vh;
+}
+
+.cartItemImg {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cartItemContainer:hover {
+    transform: scale(1.04);
+}
+
+.cartItemContainer h3 {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.cartItemContainer h4 {
+    margin-bottom: 1rem;
+    color: var(--secondary-text-color);
+}

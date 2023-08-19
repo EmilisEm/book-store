@@ -6,6 +6,7 @@ import bookImg from "../assets/stack-books-png-6.png";
 import DisplayItem from "../components/DisplayItem";
 import img1 from "../assets/stock-book.jpg";
 import img2 from "../assets/comicbook.jpg";
+import CartItem from "../components/CartItem";
 
 const Dashboar = () => {
   const navigate = useNavigate();
@@ -40,6 +41,12 @@ const Dashboar = () => {
           isReverse={true}
         />
       </div>
+      <CartItem
+        img={img1}
+        name="Svetimas"
+        auth="Albertas Kamiu"
+        price={12.99}
+      />
     </>
   );
 };

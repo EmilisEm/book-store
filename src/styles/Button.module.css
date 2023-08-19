@@ -1,6 +1,6 @@
 .button {
     text-decoration: none;
-    background-color: var(--secondary-bg-color);
+    background-color: transparent;
     border: solid 4px var(--main-text-color);
     transition: all 400ms ease-in-out;
     padding: 0.5rem 1rem;
@@ -8,10 +8,11 @@
     color: var(--main-text-color);
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .button:hover {
-    background-color: var(--main-text-color);
+    background-color: var(--main-text-color) !important;
     color: var(--main-bg-color);
 
 }
