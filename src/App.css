@@ -7,7 +7,13 @@
 html {
     overflow-x:     inherit;
     font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
 }
+
+body {
+    padding: 0 2rem;
+}
+
 :root {
     --main-bg-color:            #ffffff;
     --secondary-bg-color:       #EBECF0;
@@ -29,4 +35,13 @@ html {
 
 .active {
     color: var(--secondary-text-color) !important;
+}
+
+
+@media only screen and (max-width: 850px) {
+    :root {
+        --font-large: 22px;
+        --font-medium: 17px;
+        --font-small: 14px;
+    }
 }

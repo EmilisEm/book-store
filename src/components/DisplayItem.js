@@ -17,6 +17,7 @@ const DisplayItem = ({ img, title, desc, isReverse }) => {
         >
           <h2>{title}</h2>
           <p>{desc}</p>
+          <LinkButton onClick={() => navigate("/store")}>Shop now</LinkButton>
         </div>
         <img
           src={img}
@@ -27,7 +28,6 @@ const DisplayItem = ({ img, title, desc, isReverse }) => {
           }
         />
       </div>
-      <LinkButton onClick={() => navigate("/store")}>Shop now</LinkButton>
     </div>
   );
 };
