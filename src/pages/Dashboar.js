@@ -7,6 +7,8 @@ import DisplayItem from "../components/DisplayItem";
 import img1 from "../assets/stock-book.jpg";
 import img2 from "../assets/comicbook.jpg";
 import CartItem from "../components/CartItem";
+import Carousel from "../components/Carousel";
+import ProductDisplay from "../components/ProductDisplay";
 
 const Dashboar = () => {
   const navigate = useNavigate();
@@ -41,12 +43,53 @@ const Dashboar = () => {
           isReverse={true}
         />
       </div>
-      <CartItem
-        img={img1}
-        name="Svetimas"
-        auth="Albertas Kamiu"
-        price={12.99}
-      />
+      <Carousel>
+        <CartItem
+          img={img1}
+          name="Svetimas"
+          auth="Albertas Kamiu"
+          price={12.99}
+        />
+        <CartItem
+          img={img1}
+          name="Svetimas"
+          auth="Albertas Kamiu"
+          price={12.99}
+        />
+        <CartItem
+          img={img1}
+          name="Svetimas"
+          auth="Albertas Kamiu"
+          price={12.99}
+        />
+        <CartItem
+          img={img1}
+          name="Svetimas"
+          auth="Albertas Kamiu"
+          price={12.99}
+        />
+      </Carousel>
+
+      <ProductDisplay title="On sale">
+        <CartItem
+          img={img1}
+          name="Svetimas"
+          auth="Albertas Kamiu"
+          price={12.99}
+        />
+        <CartItem
+          img={img1}
+          name="Svetimas"
+          auth="Albertas Kamiu"
+          price={12.99}
+        />
+        <CartItem
+          img={img1}
+          name="Svetimas"
+          auth="Albertas Kamiu"
+          price={12.99}
+        />
+      </ProductDisplay>
     </>
   );
 };

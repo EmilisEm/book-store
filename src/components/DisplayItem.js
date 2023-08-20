@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../styles/displayItem.module.css";
-import Button from "./Button";
+import LinkButton from "./LinkButton";
 
 const DisplayItem = ({ img, title, desc, isReverse }) => {
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ const DisplayItem = ({ img, title, desc, isReverse }) => {
           }
         />
       </div>
-      <Button onClick={() => navigate("/store")}>Shop now</Button>
+      <LinkButton onClick={() => navigate("/store")}>Shop now</LinkButton>
     </div>
   );
 };

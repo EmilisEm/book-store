@@ -1,0 +1,8 @@
+.carousel {
+    width: auto;
+}
+
+.carouselElement {
+    display: flex;
+    justify-content: center;
+}
