@@ -1,0 +1,30 @@
+.counter {
+    font-size: var(--font-medium);
+    color: var(--main-text-color);
+    width: 100px;
+    height: 100%;
+    text-align: center;
+}
+
+.counterContainer {
+    position: relative;
+    height: 100%;
+}
+
+.counterArrowDown, .counterArrowUp {
+    width: var(--font-medium);
+    height: var(--font-medium);
+    padding: 0.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.counterArrowDown {
+    left: 0;
+}
+
+.counterArrowUp {
+    right: 0;
+}
