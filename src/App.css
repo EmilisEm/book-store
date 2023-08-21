@@ -10,10 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    padding: 0 2rem;
-}
-
 :root {
     --main-bg-color:            #ffffff;
     --secondary-bg-color:       #EBECF0;
