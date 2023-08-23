@@ -4,6 +4,7 @@ import data from "../assets/bookData";
 import styles from "../styles/storeItemPage.module.css";
 import Counter from "../components/Counter";
 import Button from "../components/Button";
+import DescriptionAndReview from "../components/DescriptionAndReview";
 
 // TO DO:
 // Add item not found page
@@ -11,7 +12,7 @@ import Button from "../components/Button";
 const StoreItem = () => {
   const { itemId } = useParams();
   const [bookData, setBookData] = useState(null);
-  const [selectedCount, setSelectedCount] = useState(0);
+  const [selectedCount, setSelectedCount] = useState(1);
   const [isError, setIsError] = useState(false);
   const [errorText, setErrorText] = useState("");
 
@@ -22,7 +23,10 @@ const StoreItem = () => {
   return (
     <div>
       <div className={styles.salePanel}>
-        <img src={bookData?.img} alt="Picture of book" />
+        <img
+          src={bookData?.img}
+          alt="Picture of book"
+        />
         <aside className={styles.itemAddToCartAside}>
           <h2>{bookData?.name}</h2>
           <h5>{bookData?.author}</h5>
@@ -42,7 +46,9 @@ const StoreItem = () => {
           </div>
         </aside>
       </div>
-      <div className={styles.discriptionReview}></div>
+      <div className={styles.descriptionReview}>
+        <DescriptionAndReview />
+      </div>
       <Link to="/store">Back</Link>
     </div>
   );
