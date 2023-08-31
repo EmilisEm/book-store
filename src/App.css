@@ -42,6 +42,14 @@ html {
     }
 }
 
+@media only screen and (max-width: 320px) {
+    :root {
+        --font-large: 18px;
+        --font-medium: 15px;
+        --font-small: 12px;
+    }
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

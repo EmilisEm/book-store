@@ -4,7 +4,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    font-size: var(--font-medium);
+    font-size: var(--font-large);
     background-color: var(--main-bg-color);
 }
 
@@ -13,7 +13,10 @@ nav {
 }
 
 .logo {
+    text-align: center;;
     position: absolute;
+    width: 80vw;
+    max-width: 300px;
     left: 50%;
     transform: translateX(-50%);
     font-style: italic;

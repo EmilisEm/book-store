@@ -1,0 +1,14 @@
+.selector {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.selector :nth-child(2) {
+    margin-left: 4rem !important;
+}
+
+.container {
+    margin-top: 2rem;
+    min-height: 100vh;
+}
